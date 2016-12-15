@@ -59,7 +59,7 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.5 ? Math.random() < 0.99999 ? 27 : 54 : Math.random() < 0.9 ? 27 : 27;
+    var value = Math.random() < 0.5 ? Math.random() < 0.9999 ? 27 : 54 : Math.random() < 0.9 ? 27 : 27;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);
